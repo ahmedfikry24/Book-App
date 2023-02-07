@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
-      theme: ThemeData(scaffoldBackgroundColor: const Color(0xff100B20)),
+      darkTheme: ThemeData.dark()
+          .copyWith(scaffoldBackgroundColor: const Color(0xff100B20)),
       home: const SplashScreen(),
     );
   }
