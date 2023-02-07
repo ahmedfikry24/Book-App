@@ -5,6 +5,19 @@ class SplashBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Image.asset('assets/images/Logo.png'),
+        const SizedBox(
+          height: 8,
+        ),
+        const Text(
+          'read books for free',
+          textAlign: TextAlign.center,
+        )
+      ],
+    );
   }
 }
