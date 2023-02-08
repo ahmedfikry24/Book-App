@@ -1,4 +1,6 @@
+import 'package:book_app/core/constant.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key});
@@ -6,18 +8,18 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 40),
+      padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 50.h),
       child: Row(
         children: [
           Image.asset(
-            'assets/images/Logo.png',
-            height: 18,
+            AppConstant.logoPath,
+            height: 18.h,
           ),
           const Spacer(),
           IconButton(
             onPressed: () {},
             icon: const Icon(Icons.search),
-            iconSize: 26,
+            iconSize: 26.r,
           )
         ],
       ),
